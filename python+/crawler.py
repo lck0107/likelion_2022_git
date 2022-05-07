@@ -8,7 +8,8 @@ soup = BeautifulSoup(response.text, 'html.parser')
 # print(response.text)
 
 
-#file = open("daum.html","w") file.write(response.text)
+#file = open("daum.html","w") 
+#file.write(response.text)
 #find.close()
 
 #print(soup.title)
@@ -18,7 +19,7 @@ soup = BeautifulSoup(response.text, 'html.parser')
 
 rank = 1
 
-results = soup.findall('a','link_favorsch')
+results = soup.findAll('a','link_favorsch')
 
 search_rank_file = open("rankresult.txt","a")
 
